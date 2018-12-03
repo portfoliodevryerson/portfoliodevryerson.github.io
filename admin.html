@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;">Mathew Mozaffari</h1>
+<h2 style="color:grey;">500697826</h2>
+
+<h2>Labs</h2>
+
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="Lab2.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
